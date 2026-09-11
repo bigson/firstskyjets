@@ -3,4 +3,4 @@ import { sequence } from '@sveltejs/kit/hooks';
 import { handleCriticalCss } from './hooks/critical-css';
 
 // Chuỗi xử lý sẽ chạy từ trái sang phải: Auth -> Critical CSS
-export const handle = sequence(handleAuth, handleCriticalCss);
+export const handle = sequence(handleCriticalCss);
